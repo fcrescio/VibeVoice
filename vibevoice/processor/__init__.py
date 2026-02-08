@@ -2,10 +2,12 @@
 from .vibevoice_processor import VibeVoiceProcessor
 from .vibevoice_streaming_processor import VibeVoiceStreamingProcessor
 from .vibevoice_tokenizer_processor import VibeVoiceTokenizerProcessor, AudioNormalizer
+from .vibevoice_asr_processor import VibeVoiceASRProcessor
 
 __all__ = [
     "VibeVoiceProcessor",
     "VibeVoiceStreamingProcessor",
     "VibeVoiceTokenizerProcessor",
     "AudioNormalizer",
+    "VibeVoiceASRProcessor",
 ]
