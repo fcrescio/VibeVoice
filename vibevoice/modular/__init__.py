@@ -4,6 +4,12 @@ from .configuration_vibevoice_streaming import VibeVoiceStreamingConfig
 from .modeling_vibevoice_streaming import VibeVoiceStreamingModel, VibeVoiceStreamingPreTrainedModel
 from .streamer import AudioStreamer, AsyncAudioStreamer
 
+from .modeling_vibevoice_asr import (
+    VibeVoiceASRPreTrainedModel,
+    VibeVoiceASRModel,
+    VibeVoiceASRForConditionalGeneration,
+)
+
 __all__ = [
     "VibeVoiceStreamingForConditionalGenerationInference",
     "VibeVoiceStreamingConfig",
@@ -11,4 +17,8 @@ __all__ = [
     "VibeVoiceStreamingPreTrainedModel",
     "AudioStreamer",
     "AsyncAudioStreamer",
+    "VibeVoiceASRPreTrainedModel",
+    "VibeVoiceASRModel",
+    "VibeVoiceASRForConditionalGeneration",
+
 ]
