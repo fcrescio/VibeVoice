@@ -4,6 +4,23 @@ from .configuration_vibevoice_streaming import VibeVoiceStreamingConfig
 from .modeling_vibevoice_streaming import VibeVoiceStreamingModel, VibeVoiceStreamingPreTrainedModel
 from .streamer import AudioStreamer, AsyncAudioStreamer
 
+# Multi-speaker model components
+from .configuration_vibevoice import (
+    VibeVoiceConfig,
+    VibeVoiceAcousticTokenizerConfig,
+    VibeVoiceSemanticTokenizerConfig,
+    VibeVoiceDiffusionHeadConfig,
+    VibeVoiceASRConfig,
+)
+from .modeling_vibevoice import (
+    VibeVoicePreTrainedModel,
+    VibeVoiceModel,
+)
+from .modeling_vibevoice_inference import (
+    VibeVoiceForConditionalGenerationInference,
+)
+
+
 from .modeling_vibevoice_asr import (
     VibeVoiceASRPreTrainedModel,
     VibeVoiceASRModel,
@@ -11,6 +28,13 @@ from .modeling_vibevoice_asr import (
 )
 
 __all__ = [
+    "VibeVoiceConfig",
+    "VibeVoiceAcousticTokenizerConfig",
+    "VibeVoiceSemanticTokenizerConfig",
+    "VibeVoiceDiffusionHeadConfig",
+    "VibeVoicePreTrainedModel",
+    "VibeVoiceModel",
+    "VibeVoiceForConditionalGenerationInference",
     "VibeVoiceStreamingForConditionalGenerationInference",
     "VibeVoiceStreamingConfig",
     "VibeVoiceStreamingModel",
@@ -20,5 +44,4 @@ __all__ = [
     "VibeVoiceASRPreTrainedModel",
     "VibeVoiceASRModel",
     "VibeVoiceASRForConditionalGeneration",
-
 ]
