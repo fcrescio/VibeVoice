@@ -509,7 +509,6 @@ class VibeVoiceForConditionalGenerationInference(VibeVoicePreTrainedModel, Gener
         )
 
         max_cache_length = generation_config.max_length - 1
-
         # >>> compat: init cache robusto (>=4.57 -> None; <4.57 -> prepara)
         model_kwargs["past_key_values"] = self._init_cache_for_generation(
             generation_config, model_kwargs, batch_size, max_cache_length, device
